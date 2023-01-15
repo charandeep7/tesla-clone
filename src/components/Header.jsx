@@ -12,7 +12,6 @@ import {useSelector} from 'react-redux';
 const Header = () => {
     const [toggle,setToggle] = useState(false);
     const cars = useSelector(selectCars);
-    console.log(cars);
     useEffect(() => {
         if (toggle) {
           document.body.style.overflowY = 'hidden';
